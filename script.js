@@ -1,4 +1,6 @@
-// ==========================================
+
+// ========
+//==================================
 // ADEOLA PORTFOLIO SCRIPT
 // Part 1
 // ==========================================
@@ -68,7 +70,7 @@ function typeRoles() {
 
 }
 
-window.addEventListener("load", typeRoles);
+window.addEventListener("DOMContentLoaded", typeRoles);
 
 
 // ==========================
@@ -233,19 +235,3 @@ if (glow) {
     });
 
 }
-// ==========================
-// Page Loader
-// ==========================
-
-window.addEventListener("load", function () {
-
-  const loader = document.querySelector(".loader");
-
-if (loader) {
-    setTimeout(() => {
-        loader.classList.add("hidden");
-    }, 1500);
-}
-
-});
-
