@@ -547,6 +547,16 @@ button:hover{
     margin:15px 0;
 }
 
+.project-image{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.project-image:hover{
+    transform:scale(1.03);
+}
 .socials{
     margin:25px 0;
 }
@@ -815,19 +825,19 @@ button:hover{
 }
 .project-btn{
     display:inline-block;
-    margin-top:20px;
-    padding:12px 24px;
+    margin:8px 5px;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:8px;
     background:#00ffcc;
     color:#111;
-    text-decoration:none;
-    border-radius:30px;
     font-weight:bold;
-    transition:.3s ease;
+    transition:0.3s;
 }
 
 .project-btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 0 20px #00ffcc;
+    box-shadow:0 0 15px #00ffcc;
 }
 
 .project-btn.disabled{
@@ -1182,4 +1192,14 @@ button:hover{
 
 #backToTop:hover{
     transform:scale(1.1);
+}
+.project-image{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.project-image:hover{
+    transform:scale(1.03);
 }
