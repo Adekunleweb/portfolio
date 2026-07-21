@@ -3,6 +3,8 @@ const apiKey = "ffaa0c4dfcfcf847809dac82a889a079";
 const cityInput = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const locationBtn = document.getElementById("locationBtn");
+const sunrise = document.getElementById("sunrise");
+const sunset = document.getElementById("sunset");
 
 const city = document.getElementById("city");
 const temperature = document.getElementById("temperature");
@@ -82,11 +84,48 @@ async function getWeather(cityName) {
 }
 
 function displayWeather(data) {
-   feelsLike.textContent = `Feels Like: ${Math.round(data.main.feels_like)}°C`;
-humidity.textContent = `Humidity: ${data.main.humidity}%`;
-wind.textContent = `Wind: ${data.wind.speed} km/h`;
-pressure.textContent = `Pressure: ${data.main.pressure} hPa`;
-visibility.textContent = `Visibility: ${data.visibility / 1000} km`;
 
-errorMessage.textContent = "";
+    city.textContent = data.name;
+
+    temperature.textContent =
+        `${Math.round(data.main.temp)}°C`;
+
+    description.textContent =
+        data.weather[0].description;
+
+    weatherIcon.src =
+        `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+    feelsLike.textContent =
+        `Feels Like: ${Math.round(data.main.feels_like)}°C`;
+
+    humidity.textContent =
+        `Humidity: ${data.main.humidity}%`;
+
+    wind.textContent =
+        `Wind: ${data.wind.speed} km/h`;
+
+    pressure.textContent =
+        `Pressure: ${data.main.pressure} hPa`;
+
+    visibility.textContent =
+        `Visibility: ${data.visibility / 1000} km`;
+        const sunriseTime = new Date(data.sys.sunrise * 1000);
+const sunsetTime = new Date(data.sys.sunset * 1000);
+
+sunrise.textContent =
+    `Sunrise: ${sunriseTime.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    })}`;
+
+sunset.textContent =
+    `Sunset: ${sunsetTime.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    })}`;
+
+
+    errorMessage.textContent = "";
+
 }

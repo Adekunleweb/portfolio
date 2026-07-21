@@ -1,0 +1,975 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+    background:red;
+    color:#fff;
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 8%;
+
+    background:rgba(8,17,31,.92);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+    color:#00d4a6;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.navbar ul li a{
+
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    transition:.35s;
+
+}
+
+.navbar ul li a:hover{
+
+    color:#00d4a6;
+
+}
+
+.login-btn{
+
+    text-decoration:none;
+    color:#fff;
+
+    border:2px solid #00d4a6;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    background:#00d4a6;
+    color:#08111f;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:90px 8%;
+
+    min-height:90vh;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.hero-text p{
+
+    font-size:19px;
+
+    color:#b8c5d6;
+
+    line-height:1.8;
+
+    max-width:520px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    text-decoration:none;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.primary-btn{
+
+    background:#00d4a6;
+
+    color:#08111f;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.secondary-btn{
+
+    border:2px solid #00d4a6;
+
+    color:white;
+
+}
+
+.secondary-btn:hover{
+
+    background:#00d4a6;
+
+    color:#08111f;
+
+}
+
+/* ==========================
+   HERO CARD
+========================== */
+
+.hero-card{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.bank-card{
+
+    width:420px;
+
+    height:240px;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    background:linear-gradient(135deg,#00d4a6,#4f8cff);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+
+    animation:floatCard 5s ease-in-out infinite;
+
+}
+
+.bank-card h3{
+
+    font-size:32px;
+
+}
+
+.bank-card p{
+
+    font-size:24px;
+
+    letter-spacing:5px;
+
+}
+
+.bank-card span{
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes floatCard{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.features-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.feature-card{
+    width:320px;
+    background:#131d31;
+    padding:35px;
+    border-radius:20px;
+    transition:.35s ease;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.feature-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,212,166,.25);
+}
+
+.feature-card h3{
+    color:#00d4a6;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:#b8c5d6;
+    line-height:1.8;
+}
+
+/* =========================
+   DASHBOARD SECTION
+========================= */
+
+.dashboard-preview{
+    padding:100px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:60px;
+}
+
+.dashboard-text{
+    flex:1;
+    min-width:320px;
+}
+
+.dashboard-text h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.dashboard-text p{
+    color:#b8c5d6;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.dashboard-card{
+    flex:1;
+    min-width:340px;
+    background:#151f35;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.dashboard-card h3{
+    color:#00d4a6;
+    margin-bottom:20px;
+}
+
+.dashboard-card h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.dashboard-card hr{
+    border:none;
+    height:1px;
+    background:#2b3954;
+    margin:20px 0;
+}
+
+.transaction{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.transaction:last-child{
+    border-bottom:none;
+}
+/* =========================
+   BANKING CARDS
+========================= */
+
+.cards-section{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.cards-section h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cards-subtitle{
+    color:#b8c5d6;
+    font-size:18px;
+    margin-bottom:55px;
+}
+
+/* Cards Layout */
+
+.cards-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:35px;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Individual Card */
+
+.credit-card{
+    position:relative;
+    overflow:hidden;
+
+    width:100%;
+    max-width:380px;
+    height:240px;
+
+    margin:auto;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    color:#fff;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.credit-card:hover{
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(255,255,255,.12);
+}
+
+/* Shine Effect */
+
+.credit-card::before{
+    content:"";
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+}
+
+.credit-card:hover::before{
+    left:160%;
+}
+
+/* Background Colors */
+
+.premium{
+    background:linear-gradient(135deg,#00d4a6,#4f8cff);
+}
+
+.virtual{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.business{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+/* Card Title */
+
+.credit-card h3{
+    font-size:30px;
+    font-weight:700;
+}
+
+/* Contactless */
+
+.contactless{
+    position:absolute;
+
+    top:28px;
+    right:28px;
+
+    font-size:28px;
+}
+
+/* Chip */
+
+.card-chip{
+    width:62px;
+    height:45px;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#f6d365,#d4af37);
+}
+
+/* Number */
+
+.credit-card p{
+    font-size:22px;
+    letter-spacing:5px;
+}
+
+/* Holder */
+
+.card-holder{
+    font-size:16px;
+    letter-spacing:3px;
+    font-weight:600;
+}
+
+/* Expiry */
+
+.card-expiry{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card-expiry small{
+    opacity:.8;
+}
+
+.card-expiry strong{
+    font-size:18px;
+}
+
+/* Footer */
+
+.card-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.card-footer span{
+    font-size:18px;
+}
+
+.card-footer h4{
+    font-size:54px;
+    letter-spacing:2px;
+}
+/* ===========================
+   TRUSTED SECTION
+=========================== */
+
+.trusted{
+
+    padding:100px 8%;
+    text-align:center;
+
+}
+
+.trusted h2{
+
+    font-size:42px;
+    margin-bottom:55px;
+
+}
+
+.trusted-logos{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+}
+
+.logo-box{
+
+    width:180px;
+    height:90px;
+
+    background:#151f35;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#00d4a6;
+
+    font-size:22px;
+    font-weight:700;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+.logo-box:hover{
+
+    transform:translateY(-8px);
+
+    background:#00d4a6;
+
+    color:#08111f;
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+    gap:60px;
+
+}
+
+.hero-text{
+
+    max-width:100%;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.hero-stats{
+
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+
+}
+
+.bank-card{
+
+    width:100%;
+    max-width:420px;
+
+}
+
+.dashboard-preview{
+
+    flex-direction:column;
+
+}
+
+.cards-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.navbar ul{
+
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.hero{
+
+    padding:70px 8%;
+
+}
+
+.hero-text h1{
+
+    font-size:46px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+.features-container{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.cards-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.credit-card{
+
+    max-width:100%;
+
+}
+
+.dashboard-card{
+
+    min-width:100%;
+
+}
+
+.logo-box{
+
+    width:100%;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-text h1{
+
+    font-size:36px;
+
+}
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+.cards-section h2,
+.features h2,
+.trusted h2{
+
+    font-size:32px;
+
+}
+
+.dashboard-text h2{
+
+    font-size:34px;
+
+}
+
+.dashboard-card h1{
+
+    font-size:36px;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00d4a6;
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08111f;
+
+}
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    background:linear-gradient(135deg,#08111f,#101c33,#0b1220);
+
+}
+
+.login-box{
+
+    .login-box {
+  border: 1px solid rgba(0, 212, 166, 0.25);
+}
+
+    width:100%;
+    max-width:430px;
+
+    padding:45px;
+
+    background:rgba(21,31,53,.90);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    text-align:center;
+
+}
+
+.login-box h2{
+
+    color:#00d4a6;
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:#b8c5d6;
+
+    margin-bottom:35px;
+
+}
+
+.login-box form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.login-box input{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1c2944;
+
+    color: #7f93b0;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+.login-box input:focus{
+
+    border:2px solid #00d4a6;
+
+    box-shadow:0 0 15px rgba(0,212,166,.35);
+
+}
+
+.login-box button{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#00d4a6;
+
+    color:#08111f;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.login-box button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,212,166,.35);
+
+}
+
+.login-box a{
+
+    display:block;
+
+    margin-top:25px;
+
+    color:#00d4a6;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.login-box a:hover{
+
+    text-decoration:underline;
+
+}

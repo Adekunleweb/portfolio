@@ -31,10 +31,10 @@ if (hireBtn) {
 // ==========================
 
 const roles = [
-    "Frontend Web Developer",
-    "Responsive Website Designer",
+    "Frontend Developer",
     "JavaScript Developer",
-    "Creative Problem Solver"
+    "Responsive Web Designer",
+    "Future Full-Stack Developer"
 ];
 let roleIndex = 0;
 let charIndex = 0;

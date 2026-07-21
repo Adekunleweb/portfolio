@@ -81,3 +81,13 @@ li{
     text-decoration: line-through;
     opacity: 0.6;
 }
+#clearBtn{
+    width:100%;
+    margin-top:15px;
+    background:#dc2626;
+    color:white;
+}
+
+#clearBtn:hover{
+    transform:scale(1.02);
+}

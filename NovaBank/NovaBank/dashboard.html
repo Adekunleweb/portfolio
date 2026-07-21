@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaBank Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>NovaBank</h2>
+
+        <ul>
+
+            <li>🏠 Dashboard</li>
+            <li>💳 Cards</li>
+            <li>💸 Transfer</li>
+            <li>📜 Transactions</li>
+            <li>👤 Profile</li>
+            <li>⚙ Settings</li>
+            <li>🚪 Logout</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <h1>Welcome, Adeola 👋</h1>
+
+            <div class="profile">
+
+                <span>🔔</span>
+
+                <img src="https://i.pravatar.cc/60" alt="Profile">
+
+            </div>
+
+        </div>
+
+        <!-- Balance Card -->
+
+        <div class="balance-card">
+
+            <p>Available Balance</p>
+
+            <h2>$12,845.20</h2>
+
+            <small>Updated just now</small>
+
+        </div>
+        <!-- Quick Actions -->
+
+<section class="quick-actions">
+
+    <div class="action-card">
+        <h3>💸 Transfer</h3>
+        <p>Send money instantly.</p>
+    </div>
+
+    <div class="action-card">
+        <h3>💳 Cards</h3>
+        <p>Manage your debit & virtual cards.</p>
+    </div>
+
+    <div class="action-card">
+        <h3>📜 Transactions</h3>
+        <p>View recent payments.</p>
+    </div>
+
+</section>
+<!-- Recent Beneficiaries -->
+
+<section class="beneficiaries">
+
+    <h2>Recent Beneficiaries</h2>
+
+    <div class="beneficiary-list">
+
+        <div class="beneficiary">
+            <div class="avatar">A</div>
+            <div>
+                <h4>Alex Johnson</h4>
+                <small>Bank Transfer</small>
+            </div>
+        </div>
+
+        <div class="beneficiary">
+            <div class="avatar">S</div>
+            <div>
+                <h4>Sarah Williams</h4>
+                <small>Business Account</small>
+            </div>
+        </div>
+
+        <div class="beneficiary">
+            <div class="avatar">M</div>
+            <div>
+                <h4>Michael Brown</h4>
+                <small>Personal Account</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Recent Transactions -->
+
+<section class="transactions">
+
+    <h2>Recent Transactions</h2>
+
+    <div class="transaction">
+        <span>Netflix Subscription</span>
+        <strong style="color:#ff6b6b;">-$18.99</strong>
+    </div>
+
+    <div class="transaction">
+        <span>Salary Deposit</span>
+        <strong style="color:#00d4a6;">+$3,500.00</strong>
+    </div>
+
+    <div class="transaction">
+        <span>Amazon Purchase</span>
+        <strong style="color:#ff6b6b;">-$149.99</strong>
+    </div>
+
+    <div class="transaction">
+        <span>Apple Music</span>
+        <strong style="color:#ff6b6b;">-$10.99</strong>
+    </div>
+
+</section>
+<!-- Banking Cards -->
+
+<section class="dashboard-cards">
+
+    <h2>Your Cards</h2>
+
+    <div class="cards-grid">
+
+        <div class="dashboard-card premium-card">
+
+            <h3>Nova Platinum</h3>
+
+            <span class="card-wave">📶</span>
+
+            <p>**** **** **** 2048</p>
+
+            <div class="card-bottom">
+
+                <span>ADEOLA Q.</span>
+
+                <strong>VISA</strong>
+
+            </div>
+
+        </div>
+
+        <div class="dashboard-card virtual-card">
+
+            <h3>Virtual Card</h3>
+
+            <span class="card-wave">📶</span>
+
+            <p>**** **** **** 9981</p>
+
+            <div class="card-bottom">
+
+                <span>ADEOLA Q.</span>
+
+                <strong>VISA</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Analytics -->
+
+<section class="analytics">
+
+    <div class="analytics-card">
+
+        <h2>Monthly Spending</h2>
+
+        <div class="chart">
+
+            <div class="bar" style="height:70%;">
+                <span>Jan</span>
+            </div>
+
+            <div class="bar" style="height:95%;">
+                <span>Feb</span>
+            </div>
+
+            <div class="bar" style="height:55%;">
+                <span>Mar</span>
+            </div>
+
+            <div class="bar" style="height:100%;">
+                <span>Apr</span>
+            </div>
+
+            <div class="bar" style="height:75%;">
+                <span>May</span>
+            </div>
+
+            <div class="bar" style="height:88%;">
+                <span>Jun</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h2>Financial Summary</h2>
+
+        <div class="summary-item">
+            <span>Income</span>
+            <strong style="color:#00d4a6;">+$8,200</strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Expenses</span>
+            <strong style="color:#ff6b6b;">-$3,950</strong>
+        </div>
+
+        <div class="summary-item">
+            <span>Savings</span>
+            <strong style="color:#4f8cff;">$4,250</strong>
+        </div>
+
+    </div>
+
+</section>
+<!-- Send Money -->
+
+<section class="send-money">
+
+    <h2>Send Money</h2>
+
+    <form>
+
+        <input type="text" placeholder="Recipient Name">
+
+        <input type="number" placeholder="Amount">
+
+        <button type="submit">
+            Send Money
+        </button>
+
+    </form>
+
+</section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
